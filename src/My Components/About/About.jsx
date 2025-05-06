@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className='w-full p-4 h-full bg-yellow-600  bg-[url("./src/assets/aboutbg.png")] '>
+    <div className='w-full p-4 h-full bg-yellow-600  bg-[url("./assets/aboutbg.png")] '>
     <div className="p-6 max-w-4xl mx-auto min-h-screen bg-gradient-to-b  from-blue-900 rounded-2xl shadow-lg  dark:text-white ">
       <h1 className="text-4xl font-bold mb-4 text-yellow-400">About Us</h1>
       <p className="text-lg mb-4">

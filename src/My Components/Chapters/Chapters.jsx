@@ -37,7 +37,7 @@ const Chapters = () => {
 
   return (
     
-    <div className="min-h-screen bg-gradient-to-r from-indigo-600 to-pink-600 dark:text-white">
+    <div className="min-h-screen  from-indigo-600 to-pink-600 dark:text-white bg-[url('./assets/chapterbg.png')]">
     
       <div className="container mx-auto px-6 py-12">
         <div className="text-center text-white mb-16">
@@ -53,7 +53,7 @@ const Chapters = () => {
               } rounded-xl  shadow-lg p-6 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:-translate-y-2`}
             >
               <h2 className="text-3xl font-semibold text-black mb-4 dark:text-white">{e.cN}</h2>
-              <img src="./src/assets/chap.png" alt="" srcset="" />
+              <img src="./src/assets/chap.png" alt="Not Available" srcset="" />
               <p className="text-lg text-gray-800 dark:text-gray-300">{e.tC}</p>
 
               <NavLink
