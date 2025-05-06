@@ -70,7 +70,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 bg-gradient-to-tl from-blue-950 to to-emerald-950  dark:via-blue-800 dark:to-gray-950`}>
+    <div className={`min-h-screen transition-colors duration-300 text-white bg-[url('./src/assets/ayushdev.png')] bg-cover bg-center `}>
       <div className="max-w-md mx-auto p-8">
     
        
@@ -92,6 +92,7 @@ const ContactPage = () => {
                   {wfD.charAt(0).toUpperCase() + wfD.slice(1)} 
                 </label>
                 <input
+                placeholder='Enter the required values...'
                   type={wfD === 'email' ? 'email' : 'text'}
                   id={wfD}
                   name={wfD}
