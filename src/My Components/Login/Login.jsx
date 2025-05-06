@@ -35,7 +35,7 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center dark:from-black dark:to-gray-800  bg-[url('./src/assets/loginwlcm.png')]  bg-contain bg-center  relative">
+    <div className="min-h-screen flex items-center justify-center dark:from-black dark:to-gray-800  bg-[url('/Dragon-cast/src/assets/loginwlcm.png')]  bg-contain bg-center  relative">
       <div className="absolute inset-0 bg-black opacity-40"></div>
       {!Login ? (
         <div className="bg-white dark:bg-gray-800 dark:text-white shadow-2xl rounded-xl p-8 w-full max-w-md space-y-6 transform transition-all duration-500 ease-in-out hover:scale-105">
