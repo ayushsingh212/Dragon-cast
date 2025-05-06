@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import dfd from "../../assets/chap.png"; 
 
 const Chapters = () => {
   const prevChapl = [
@@ -53,7 +54,7 @@ const Chapters = () => {
               } rounded-xl  shadow-lg p-6 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:-translate-y-2`}
             >
               <h2 className="text-3xl font-semibold text-black mb-4 dark:text-white">{e.cN}</h2>
-              <img src="./src/assets/chap.png" alt="Not Available" srcset="" />
+              <img src={dfd} alt="Not Available" srcset="" />
               <p className="text-lg text-gray-800 dark:text-gray-300">{e.tC}</p>
 
               <NavLink

@@ -70,7 +70,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 text-white bg-[url('./src/assets/ayushdev.png')] bg-cover bg-center `}>
+    <div className={`min-h-screen transition-colors duration-300 text-white bg-[url('./assets/ayushdev.png')] bg-cover bg-center `}>
       <div className="max-w-md mx-auto p-8">
     
        
