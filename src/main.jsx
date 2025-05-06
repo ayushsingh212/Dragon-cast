@@ -26,14 +26,15 @@ const router = createBrowserRouter(
       <Route path="coming-soon" element={<SorryUpcom/>} />
       <Route path='contact'element ={<ContactPage/>} />
 
-    
+   
     </Route>
-  )
+  ),
+  { basename : "/Dragon-cast/"}
 )
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <UserContextProvider >
-    <RouterProvider router={router}  basename = "/Dragon-cast/" />
+    <RouterProvider router={router}  />
     </UserContextProvider>
   </StrictMode>
 )
