@@ -15,7 +15,7 @@ import ContactPage from './My Components/Contact/Contact.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<Layout />}   >
+    <Route  path='/' element={<Layout />}   >
       <Route path='' element={<Home />} />
       <Route path='about' element={<About />} />
       <Route path='chapters' element={<Chapters />}/>
@@ -32,8 +32,8 @@ const router = createBrowserRouter(
 )
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <UserContextProvider>
-    <RouterProvider router={router} />
+    <UserContextProvider >
+    <RouterProvider router={router}  basename = "/Dragon-cast/" />
     </UserContextProvider>
   </StrictMode>
 )
