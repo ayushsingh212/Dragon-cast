@@ -73,17 +73,14 @@ const ContactPage = () => {
     <div className={`min-h-screen transition-colors duration-300 text-white bg-[url('./assets/ayushdev.png')] bg-cover bg-center `}>
       <div className="max-w-md mx-auto p-8">
     
-       
-
         <div className={`rounded-xl shadow-md overflow-hidden p-8 `}>
           <h1 className="text-3xl font-bold text-center mb-6">Contact the Developer</h1>
-          
           {subm && (
             <div className={`p-3 mb-6 rounded `}>
               {isEdit ? 'Submission updated!' : 'Thank you! Message saved.'}
             </div>
           )}
-
+                        
           <form onSubmit={handSubm} className="space-y-6">
          
             {['name', 'email', 'subject'].map((wfD) => (
@@ -99,7 +96,7 @@ const ContactPage = () => {
                   value={fD[wfD]}
                   onChange={hChan}
                   required
-                  className={`mt-1 block w-full px-3 py-2 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 '}`}
+                  className={`mt-1 block w-full px-3 py-2 rounded-md shadow-sm focus:outline-none focus:ring-2   text-black focus:ring-indigo-500 '}`}
                 />
               </div>
             ))}
