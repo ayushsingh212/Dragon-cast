@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, createHashRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import Layout from './My Components/Layout/Layout.jsx'
 import Home from './My Components/Home/Home.jsx'
 import About from './My Components/About/About.jsx'
@@ -13,7 +13,7 @@ import { UserContextProvider } from './My Components/Context/UseContext.jsx'
 import SorryUpcom from './My Components/UpcomingChapter/SorryUpcom.jsx'
 import ContactPage from './My Components/Contact/Contact.jsx'
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
     <Route  path='/' element={<Layout />}   >
       <Route path='' element={<Home />} />
@@ -29,7 +29,7 @@ const router = createBrowserRouter(
    
     </Route>
   ),
-  { basename : "/Dragon-cast/"}
+
 )
 createRoot(document.getElementById('root')).render(
   <StrictMode>
